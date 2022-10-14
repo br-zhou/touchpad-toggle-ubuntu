@@ -1,7 +1,10 @@
 #! /usr/bin/bash
 
-# find id using 'xinput' command
-TOUCHPAD_ID=14
+# use 'xinput' to find your touchpad name
+DEVICE_NAME="ELAN0000:00 04F3:3138 Touchpad"
+
+# find touchpad id
+TOUCHPAD_ID=$(xinput list --id-only "$DEVICE_NAME")
 
 # read ini file
 FILE_PATH="settings.ini"
