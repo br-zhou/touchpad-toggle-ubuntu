@@ -1,0 +1,1 @@
+Touchpad toggle for my Ubuntu laptop using xinput.
